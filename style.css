@@ -56,5 +56,101 @@ button, input, select, textarea {
 }
 
 /*
- * Section
+ * Contact
  */
+.contact {
+  padding: 3rem 0;
+}
+.contact__inner {
+  width: min(100%, 600px);
+  margin: auto;
+  padding: 0 clamp(0.75rem, 2%, 1.5rem);
+}
+.contact__heading {
+  text-align: center;
+}
+.contact__form label {
+  display: block;
+}
+.contact__form label span.required {
+  color: red;
+  font-size: 80%;
+}
+.contact__form input[type=text], .contact__form input[type=tel], .contact__form input[type=url], .contact__form input[type=email], .contact__form input[type=password], .contact__form input[type=file], .contact__form select, .contact__form optgroup, .contact__form textarea {
+  display: block;
+  width: 100%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.contact__form input[type=text], .contact__form input[type=tel], .contact__form input[type=url], .contact__form input[type=email], .contact__form input[type=password], .contact__form input[type=file], .contact__form select, .contact__form optgroup {
+  height: 2.88rem;
+}
+.contact__form input[type=file] {
+  outline: 0;
+}
+.contact__form textarea {
+  padding-top: 0.5em;
+  padding-top: 0.5em;
+  resize: vertical;
+}
+.contact__form [type=button], .contact__form [type=reset], .contact__form [type=submit] {
+  display: block;
+  width: 12rem;
+  margin: 1.5rem auto;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #3399cc;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.contact__form [type=button]:hover, .contact__form [type=reset]:hover, .contact__form [type=submit]:hover {
+  opacity: 0.85;
+}
+.contact__formTable {
+  width: 100%;
+}
+@media (max-width: 599.9px) {
+  .contact__formTable {
+    display: block;
+  }
+}
+.contact__formTable thead, .contact__formTable tbody {
+  width: 100%;
+}
+@media (max-width: 599.9px) {
+  .contact__formTable thead, .contact__formTable tbody {
+    display: block;
+  }
+}
+.contact__formTable thead {
+  border: 0;
+}
+.contact__formTable tr {
+  border-bottom: 1px solid #d9d9d9;
+}
+.contact__formTable tr:first-child {
+  border-top: 1px solid #d9d9d9;
+}
+@media (max-width: 599.9px) {
+  .contact__formTable tr {
+    display: block;
+  }
+}
+.contact__formTable th, .contact__formTable td {
+  padding: 0.625rem;
+  border: 0;
+}
+@media (max-width: 599.9px) {
+  .contact__formTable th, .contact__formTable td {
+    display: block;
+  }
+}

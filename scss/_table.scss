@@ -1,0 +1,42 @@
+// Table
+
+@mixin table() {
+  width: 100%;
+
+  @media (max-width: $breakpointSm - 0.1px) {
+    display: block;
+  }
+
+  thead, tbody {
+    width: 100%;
+
+    @media (max-width: $breakpointSm - 0.1px) {
+      display: block;
+    }
+  }
+
+  thead {
+    border: 0; // Reset
+  }
+
+  tr {
+    border-bottom: 1px solid #d9d9d9;
+
+    &:first-child {
+      border-top: 1px solid #d9d9d9;
+    }
+
+    @media (max-width: $breakpointSm - 0.1px) {
+      display: block;
+    }
+  }
+
+  th, td {
+    padding: .625rem;
+    border: 0; // Reset
+
+    @media (max-width: $breakpointSm - 0.1px) {
+      display: block;
+    }
+  }
+}

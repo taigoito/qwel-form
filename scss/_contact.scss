@@ -1,0 +1,25 @@
+/*
+ * Contact
+ */
+
+.contact {
+  padding: 3rem 0;
+
+  &__inner {
+    width: min(100%, #{$breakpointSm});
+    margin: auto;
+    padding: 0 clamp(0.75rem, 2%, 1.5rem);
+  }
+
+  &__heading {
+    text-align: center;
+  }
+
+  &__form {
+    @include form();
+  }
+
+  &__formTable {
+    @include table();
+  }
+}

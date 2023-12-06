@@ -1,0 +1,55 @@
+// Form
+
+@mixin form() {
+  label {
+    display: block;
+
+    span.required {
+      color: red;
+      font-size: 80%;
+    }
+  }
+
+  input[type="text"], input[type="tel"], input[type="url"], input[type="email"], input[type="password"], input[type="file"], select, optgroup, textarea {
+    display: block;
+    width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  input[type="text"], input[type="tel"], input[type="url"], input[type="email"], input[type="password"], input[type="file"], select, optgroup {
+    height: 2.88rem;
+  }
+
+  input[type="file"] {
+    outline: 0;  
+  }
+
+  textarea {
+    padding-top: 0.5em;
+    padding-top: 0.5em;
+    resize: vertical;
+  }
+
+  [type="button"], [type="reset"], [type="submit"] {
+    display: block;
+    width: 12rem;
+    margin: 1.5rem auto;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    background-color: #3399cc;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-word;
+    outline: 0;
+    user-select: none;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}
