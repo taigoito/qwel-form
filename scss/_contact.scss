@@ -22,4 +22,20 @@
   &__formTable {
     @include table();
   }
+
+  &__buttons {
+    text-align: center;
+  }
+
+  [type="button"] {
+    @include button(#ff9933);
+  }
+
+  [type="reset"] {
+    @include button(#99cc33);
+  }
+
+  [type="submit"] {
+    @include button(#3399cc);
+  }
 }

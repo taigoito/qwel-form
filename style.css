@@ -93,28 +93,6 @@ button, input, select, textarea {
   padding-top: 0.5em;
   resize: vertical;
 }
-.contact__form [type=button], .contact__form [type=reset], .contact__form [type=submit] {
-  display: block;
-  width: 12rem;
-  margin: 1.5rem auto;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 3px;
-  background-color: #3399cc;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  word-break: break-word;
-  outline: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  transition: all 0.25s ease-in-out;
-}
-.contact__form [type=button]:hover, .contact__form [type=reset]:hover, .contact__form [type=submit]:hover {
-  opacity: 0.85;
-}
 .contact__formTable {
   width: 100%;
 }
@@ -153,4 +131,73 @@ button, input, select, textarea {
   .contact__formTable th, .contact__formTable td {
     display: block;
   }
+}
+.contact__buttons {
+  text-align: center;
+}
+.contact [type=button] {
+  display: inline-block;
+  width: 12rem;
+  margin: 1.5rem auto;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff9933;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.contact [type=button]:hover {
+  opacity: 0.85;
+}
+.contact [type=reset] {
+  display: inline-block;
+  width: 12rem;
+  margin: 1.5rem auto;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #99cc33;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.contact [type=reset]:hover {
+  opacity: 0.85;
+}
+.contact [type=submit] {
+  display: inline-block;
+  width: 12rem;
+  margin: 1.5rem auto;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #3399cc;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  word-break: break-word;
+  outline: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.contact [type=submit]:hover {
+  opacity: 0.85;
 }
