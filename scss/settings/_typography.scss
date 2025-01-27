@@ -1,0 +1,54 @@
+// Typography
+
+// 固有のフォント設定
+$fontFamilySansSerif:  "游ゴシック", "Yu Gothic", sans-serif;
+$fontFamilySerif:      "游明朝", "Yu Mincho", serif;
+$fontWeightSansSerif:  500; // 游ゴシック固有
+$fontWeightSerif:      400;
+//$fontFamilySansSerif:  "Noto Sans JP", sans-serif;
+//$fontFamilySerif:      "Noto Serif JP", serif;
+//$fontWeightSansSerif:  400;
+//$fontWeightSerif:      400;
+
+// フォントサイズ
+$fontSizes:            (
+  xs:                    0.75rem,  //  6/8
+  sm:                    0.875rem, //  7/8
+  nr:                    1rem,     //  8/8
+  md:                    1.125rem, //  9/8
+  lg:                    1.25rem,  // 10/8
+  xl:                    1.5rem,   // 12/8
+  xxl:                   2rem,     // 16/8
+);
+
+// body
+$fontFamilyBase:       $fontFamilySansSerif;
+$fontWeightBase:       $fontWeightSansSerif;
+$lineHeightBase:       28.8 / ($fontSizeBase / ($fontSizeBase * 0 + 1)); // 単位除去
+$letterSpacingBase:    0;
+
+// 余白
+$defaultMargin:        space();
+
+// 見出し
+$headingMarginTop:     $defaultMargin * 2;
+$headingMarginBottom:  $defaultMargin;
+$headingFontFamily:    $fontFamilySansSerif;
+$headingFontWeight:    $fontWeightSansSerif;
+$h1FontSize:           map-get($fontSizes, "xxl");
+$h2FontSize:           map-get($fontSizes, "xl");
+$h3FontSize:           map-get($fontSizes, "lg");
+$h4FontSize:           map-get($fontSizes, "md");
+$h5FontSize:           map-get($fontSizes, "nr"); // bold
+$h6FontSize:           map-get($fontSizes, "sm"); // bold
+$headingLineHeight:    1.2;
+$headingLetterSpacing: $letterSpacingBase;
+
+// small
+$smallFontSize:        map-get($fontSizes, "sm");
+$smallLineHeight:      $lineHeightBase;
+$smallLetterSpacing:   $letterSpacingBase;
+
+// リンク文字の装飾
+$linkDecoration:       none;
+$linkHoverDecoration:  underline;
