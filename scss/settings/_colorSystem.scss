@@ -9,7 +9,9 @@ $themeColors:    (
   lighter:         #d9d9d9, // 85%
   lightest:        #ffffff, // 100%
   primary:         #3399cc, // hsl(200, 60%, 50%)
-  primaryLight:    #85c2e0  // hsl(200, 60%, 70%)
+  primaryLight:    #85c2e0, // hsl(200, 60%, 70%)
+  secondary:       #ff9933, // hsl(30, 100%, 60%)
+  tertiary:        #99cc33  // hsl(80, 60%, 50%)
 );
 
 // 配色の配列から色指定を抽出する関数
