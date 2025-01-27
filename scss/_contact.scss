@@ -7,10 +7,10 @@
   padding: space(3) 0;
 
   &__container {
-    @include container();
+    @include container("sm");
   }
 
-  &__row {
-    @include row();
+  &__heading {
+    text-align: center;
   }
 }
